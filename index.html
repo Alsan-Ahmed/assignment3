@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+        integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
+        crossorigin="unknown" referrerpolicy="no" />
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'color-Orenge': '#FF4240',
+                        'heading-black': '#131318',
+                        'nav-text': '#424247',
+                        'discription': '#13131899',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <title>Professional Hockey’s Club</title>
+
+</head>
+
+<body class="font-manrope">
+    <header class="container max-w-[1170px] mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="lg:text-4xl text-2xl font-extrabold text-heading-black">Hockey<span
+                            class="text-color-Orenge">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base text-nav-text font-medium">
+                        <li class="text-color-Orenge"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex gap-6">
+                    <img src="images/Frame.png" class="hidden lg:flex" alt="">
+                    <a class="btn bg-color-Orenge text-white lg:text-xl text-lg border-none font-bold">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div class="container max-w-[1170px] my-14 mx-auto">
+                <div class="carousel w-full overflow-hidden">
+                    <div id="slide1"
+                        class="carousel-item relative w-full lg:bg-[url('./images/1.png')] lg:h-[560px] bg-no-repeat bg-cover bg-center rounded-2xl">
+                        <img src="images/banner-for-sm.png" class="w-full px-5 lg:hidden" />
+                        <div
+                            class="max-w-lg h-fit  bg-heading-black p-8 rounded-2xl absolute lg:block hidden right-8 bottom-8 space-y-3">
+                            <h3 class="text-white text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                            <p class="text-white font-medium"><strong> Wayne Gretzky:</strong>Considered the
+                                greatest,holds numerous records.
+                                <strong>Mario Lemieux:</strong>Overcame health issues,led Penguins to two Stanley Cups.
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2"
+                        class="carousel-item relative w-full lg:bg-[url('./images/2.png')] lg:h-[560px] bg-no-repeat bg-cover bg-center rounded-2xl">
+                        <img src="images/2.png" class="w-full px-5 lg:hidden" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3"
+                        class="carousel-item relative w-full lg:bg-[url('./images/3.png')] lg:h-[560px] bg-no-repeat bg-cover bg-center rounded-2xl">
+                        <img src="images/3.png" class="w-full px-5 lg:hidden" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide4" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide4"
+                        class="carousel-item relative w-full lg:bg-[url('./images/4.png')] lg:h-[560px] bg-no-repeat bg-cover bg-center rounded-2xl">
+                        <img src="images/4.png" class="w-full px-5 lg:hidden" />
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-lg h-fit text-center lg:hidden bg-heading-black p-3 rounded-2xl my-4 mx-5 space-y-3">
+                    <h3 class="text-white lg:text-2xl text-lg font-extrabold">Meet all the heroes from the field</h3>
+                    <p class="text-white text-sm font-medium"><strong> Wayne Gretzky:</strong>Considered the
+                        greatest,holds numerous records.
+                        <strong>Mario Lemieux:</strong>Overcame health issues,led Penguins to two Stanley Cups.
+                </div>
+            </div>
+            <hr class="border-dashed border-2">
+        </section>
+    </header>
+    <main>
+        <section>
+            <div class="container max-w-[1170px] mx-auto">
+                <div class="text-center mt-16 space-y-5 lg:px-0 px-5 mb-8">
+                    <h1 class="lg:text-3xl text-2xl font-extrabold text-heading-black">Professional Hockeys Club</h1>
+                    <p class="lg:text-base text-sm text-discription font-medium max-w-[900px] mx-auto">A professional
+                        ice hockey league in North America comprising 32 teams—25 in the United States and 7 in Canada.
+                        The Stanley Cup, the oldest professional sports trophy in North America,[7] is awarded annually
+                        to the league playoff champion at the end of each season.</p>
+                </div>
+                <hr class="border-dashed border-2">
+                <div class="grid lg:grid-cols-4 grid-cols-1 my-24 gap-8">
+                    <div class="space-y-7 text-center">
+                        <div class="radial-progress rotate-180 text-red-500 text-4xl"
+                            style="--value:95; --size:12rem; --thickness: 1.5rem;" role="progressbar">
+                            <h3 class="text-heading-black rotate-180">95%</h3>
+                        </div>
+                        <h3 class="text-xl font-semibold text-heading-black">Prayer Facility</h3>
+                        <p class="text-discription text-base font-normal text-center">Every Muslim is expected to pray
+                            five times a day and not praying is not an option. However Muslims do have the option of
+                            shortening and combining prayers when playing.</p>
+                    </div>
+                    <div class="space-y-7 text-center">
+                        <div class="radial-progress rotate-180 text-green-500 text-4xl"
+                            style="--value:90; --size:12rem; --thickness: 1.5rem;" role="progressbar">
+                            <h3 class="text-heading-black rotate-180">90%</h3>
+                        </div>
+                        <h3 class="text-xl font-semibold text-heading-black">Experienced Coach</h3>
+                        <p class="text-discription text-base font-normal text-center">Our coaches have played the game
+                            of Hockey at the highest levels and have experience coaching, training and developing
+                            athletes that have reached the collegiate, Olympic and Professional level.</p>
+                    </div>
+                    <div class="space-y-7 text-center">
+                        <div class="radial-progress rotate-180 text-orange-400 text-4xl"
+                            style="--value:90; --size:12rem; --thickness: 1.5rem;" role="progressbar">
+                            <h3 class="text-heading-black rotate-180">90%</h3>
+                        </div>
+                        <h3 class="text-xl font-semibold text-heading-black">Senior Player</h3>
+                        <p class="text-discription text-base font-normal text-center">A sport for all ages, senior
+                            hockey generally describes hockey played by anyone over the age of 16.Senior player brings
+                            seasoned
+                            expertise and leadership to the team.</p>
+                    </div>
+                    <div class="space-y-7 text-center">
+                        <div class="radial-progress rotate-180 text-sky-500 text-4xl"
+                            style="--value:80; --size:12rem; --thickness: 1.5rem;" role="progressbar">
+                            <h3 class="text-heading-black rotate-180">80%</h3>
+                        </div>
+                        <h3 class="text-xl font-semibold text-heading-black">Training Ground</h3>
+                        <p class="text-discription text-base font-normal text-center">It's a most comprehensive and
+                            effective training environment with its unique technology, methodology and services for all
+                            categories of hockey players and skaters.</p>
+                    </div>
+                </div>
+                <hr class="border-dashed border-2">
+            </div>
+        </section>
+        <section>
+            <div class="container max-w-[1170px] my-12 mx-auto">
+                <div class="text-center mt-16 space-y-5 lg:px-0 px-5 mb-8">
+                    <h1 class="lg:text-3xl text-2xl font-extrabold text-heading-black">Program Section</h1>
+                    <p class="lg:text-base text-sm text-discription font-medium max-w-[900px] mx-auto">Here you will
+                        find alternatives on how you can get involved in hockey. We want all Canadians involved in the
+                        game, so we are creating more opportunities for more people to play hockey in more ways.</p>
+                </div>
+                <hr class="border-dashed border-2">
+                <div class="grid lg:grid-cols-2 grid-cols-1 lg:px-0 px-5 lg:space-y-0 space-y-7 lg:gap-7 my-20">
+
+                    <div
+                        class="lg:col-span-1 bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url('./images/2.png')] bg-no-repeat bg-cover rounded-2xl w-[335px] h-[245px] lg:w-[575px] lg:h-[340px] relative">
+
+                        <div class="text-white lg:p-7 p-3 lg:space-y-4 space-y-2 bottom-0 absolute max-w-[550px]">
+                            <h3 class="lg:text-2xl text-lg font-extrabold">Junior Program</h3>
+                            <p class="text-base font-medium">Hockey's junior program provides opportunities for players
+                                ages 16-to-20 to hone and enhance their skills and is an important part of the
+                                organization's overall efforts related to player development.</p>
+                            <a class="btn bg-color-Orenge text-white lg:text-xl text-lg border-none font-bold">Register
+                                Now!</a>
+                        </div>
+                    </div>
+                    <div
+                        class="lg:col-span-1 bg-[linear-gradient(45deg,rgba(0,0,0,0.70),rgba(0,0,0,0.1)),url('./images/3.png')] bg-no-repeat bg-cover rounded-2xl w-[335px] h-[245px] lg:w-[575px] lg:h-[340px] relative">
+                        <div class="text-white lg:p-7 p-3 lg:space-y-4 space-y-2 bottom-0 absolute max-w-[550px]">
+                            <h3 class="lg:text-2xl text-lg font-extrabold">Teenager Program</h3>
+                            <p class="text-base font-medium">The Teenager Activity Program and the World Class Hockey
+                                camp provide students with a great opportunity to improve both their English and their
+                                hockey skills. Both programs are full time.
+                            </p>
+                            <a class="btn bg-color-Orenge text-white lg:text-xl text-lg border-none font-bold">Register
+                                Now!</a>
+                        </div>
+                    </div>
+                    <div
+                        class="lg:col-span-2 bg-[linear-gradient(45deg,rgba(0,0,0,0.80),rgba(0,0,0,0.1)),url('./images/4.png')] bg-no-repeat bg-cover rounded-2xl w-[335px] h-[245px] lg:w-full lg:h-[340px] relative">
+                        <div class="text-white lg:p-7 p-3 lg:space-y-4 space-y-2 bottom-0 absolute max-w-[550px]">
+                            <h3 class="lg:text-2xl text-lg font-extrabold">Professional Program</h3>
+                            <p class="text-base font-medium">The The professional Hockey Skating program is designed to
+                                teach skating instructors the proper methods of teaching hockey skating. The primary
+                                focus is up-to-date techniques to help hockey players become better skaters.</p>
+                            <a class="btn bg-color-Orenge text-white lg:text-xl text-lg border-none font-bold">Register
+                                Now!</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-dashed border-2">
+            </div>
+        </section>
+        <section>
+            <div class="container max-w-[1170px] mx-auto">
+                <div class="text-center mt-16 space-y-5 lg:px-0 px-5 mb-8">
+                    <h1 class="lg:text-3xl text-2xl font-extrabold text-heading-black">Our New Products</h1>
+                    <p class="lg:text-base text-sm text-discription font-medium max-w-[900px] mx-auto">Here you can find
+                        Our new products showcase innovation and quality.</p>
+                </div>
+                <hr class="border-dashed border-2">
+                <div class="grid lg:grid-cols-2 grid-cols-1 lg:px-0 px-5 my-14 gap-6">
+                    <div class="flex lg:flex-row flex-col lg:space-y-0 space-y-4 p-5 items-center border rounded-2xl">
+                        <div>
+                            <img src="images/5.png" alt="">
+                        </div>
+                        <div class="px-5 space-y-3">
+                            <div class="flex justify-between">
+                                <div class="flex items-center">
+                                    <img src="images/star.png" alt="">
+                                    <h4 class="text-lg font-medium text-discription">5.0</h4>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="images/eye.png" alt="">
+                                    <h4 class="text-lg font-medium text-discription">20</h4>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="images/love.png" alt="">
+                                    <h4 class="text-lg font-medium text-discription">200</h4>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-extrabold text-heading-black">World Cup Football Jacket</h3>
+                                <p class="text-base font-medium text-discription">Buy our special World Cup Football
+                                    Jacket.</p>
+                                <div class="flex lg:items-center lg:flex-row flex-col gap-2 lg:gap-0  justify-between">
+                                    <h5 class="text-color-Orenge text-lg font-extrabold">Price - $22.00</h5>
+                                    <div class="flex items-center">
+                                        <img src="images/shop.png" alt="">
+                                        <p class="text-base font-medium text-discription">Delivery Fee : Free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex lg:flex-row flex-col lg:space-y-0 space-y-4 p-5 items-center border rounded-2xl">
+                        <div>
+                            <img src="images/6.png" alt="">
+                        </div>
+
+                        <div class="px-5 space-y-3">
+                            <div class="flex justify-between">
+                                <div class="flex items-center">
+                                    <img src="images/star.png" alt="">
+                                    <h4 class="text-lg font-medium text-discription">5.0</h4>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="images/eye.png" alt="">
+                                    <h4 class="text-lg font-medium text-discription">20</h4>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="images/love.png" alt="">
+                                    <h4 class="text-lg font-medium text-discription">200</h4>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-extrabold text-heading-black">World Cup Flags Football</h3>
+                                <p class="text-base font-medium text-discription">Buy our special World Cup Flags
+                                    Football.</p>
+                                <div class="flex lg:items-center lg:flex-row flex-col gap-2 lg:gap-0  justify-between">
+                                    <h5 class="text-color-Orenge text-lg font-extrabold">Price - $22.00</h5>
+                                    <div class="flex items-center">
+                                        <img src="images/shop.png" alt="">
+                                        <p class="text-base font-medium text-discription">Delivery Fee : Free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex lg:flex-row flex-col lg:space-y-0 space-y-4 p-5 items-center border rounded-2xl">
+                        <div>
+                            <img src="images/7.png" alt="">
+                        </div>
+                        <div class="px-5 space-y-3">
+                            <div class="flex justify-between">
+                                <div class="flex items-center">
+                                    <img src="images/star.png" alt="">
+                                    <h4 class="text-lg font-medium text-discription">5.0</h4>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="images/eye.png" alt="">
+                                    <h4 class="text-lg font-medium text-discription">20</h4>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="images/love.png" alt="">
+                                    <h4 class="text-lg font-medium text-discription">200</h4>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-extrabold text-heading-black">Cap For Hockeys</h3>
+                                <p class="text-base font-medium text-discription">Buy our special Cap For Hockeys.</p>
+                                <div class="flex lg:items-center lg:flex-row flex-col gap-2 lg:gap-0  justify-between">
+                                    <h5 class="text-color-Orenge text-lg font-extrabold">Price - $22.00</h5>
+                                    <div class="flex items-center">
+                                        <img src="images/shop.png" alt="">
+                                        <p class="text-base font-medium text-discription">Delivery Fee : Free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex lg:flex-row flex-col lg:space-y-0 space-y-4 p-5 items-center border rounded-2xl">
+                        <div>
+                            <img src="images/8.png" alt="">
+                        </div>
+                        <div class="px-5 space-y-3">
+                            <div class="flex justify-between">
+                                <div class="flex items-center">
+                                    <img src="images/star.png" alt="">
+                                    <h4 class="text-lg font-medium text-discription">5.0</h4>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="images/eye.png" alt="">
+                                    <h4 class="text-lg font-medium text-discription">20</h4>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="images/love.png" alt="">
+                                    <h4 class="text-lg font-medium text-discription">200</h4>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-extrabold text-heading-black">World Cup Football Jersy</h3>
+                                <p class="text-base font-medium text-discription">Buy our special World Cup Football
+                                    Jersy.</p>
+                                <div class="flex lg:items-center lg:flex-row flex-col gap-2 lg:gap-0  justify-between">
+                                    <h5 class="text-color-Orenge text-lg font-extrabold">Price - $22.00</h5>
+                                    <div class="flex items-center">
+                                        <img src="images/shop.png" alt="">
+                                        <p class="text-base font-medium text-discription">Delivery Fee : Free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex lg:flex-row flex-col lg:space-y-0 space-y-4 p-5 items-center border rounded-2xl">
+                        <div>
+                            <img src="images/9.png" alt="">
+                        </div>
+                        <div class="px-5 space-y-3">
+                            <div class="flex justify-between">
+                                <div class="flex items-center">
+                                    <img src="images/star.png" alt="">
+                                    <h4 class="text-lg font-medium text-discription">5.0</h4>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="images/eye.png" alt="">
+                                    <h4 class="text-lg font-medium text-discription">20</h4>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="images/love.png" alt="">
+                                    <h4 class="text-lg font-medium text-discription">200</h4>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-extrabold text-heading-black">Hockey Helmet</h3>
+                                <p class="text-base font-medium text-discription">Buy our special Hockey Helmet.</p>
+                                <div class="flex lg:items-center lg:flex-row flex-col gap-2 lg:gap-0  justify-between">
+                                    <h5 class="text-color-Orenge text-lg font-extrabold">Price - $22.00</h5>
+                                    <div class="flex items-center">
+                                        <img src="images/shop.png" alt="">
+                                        <p class="text-base font-medium text-discription">Delivery Fee : Free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex lg:flex-row flex-col lg:space-y-0 space-y-4 p-5 items-center border rounded-2xl">
+                        <div>
+                            <img src="images/10.png" alt="">
+                        </div>
+                        <div class="px-5 space-y-3">
+                            <div class="flex justify-between">
+                                <div class="flex items-center">
+                                    <img src="images/star.png" alt="">
+                                    <h4 class="text-lg font-medium text-discription">5.0</h4>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="images/eye.png" alt="">
+                                    <h4 class="text-lg font-medium text-discription">20</h4>
+                                </div>
+                                <div class="flex items-center">
+                                    <img src="images/love.png" alt="">
+                                    <h4 class="text-lg font-medium text-discription">200</h4>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-extrabold text-heading-black">World Cup Flags Football</h3>
+                                <p class="text-base font-medium text-discription">Buy our special World Cup Flags
+                                    Football.</p>
+                                <div class="flex lg:items-center lg:flex-row flex-col gap-2 lg:gap-0  justify-between">
+                                    <h5 class="text-color-Orenge text-lg font-extrabold">Price - $22.00</h5>
+                                    <div class="flex items-center">
+                                        <img src="images/shop.png" alt="">
+                                        <p class="text-base font-medium text-discription">Delivery Fee : Free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-dashed border-2">
+            </div>
+        </section>
+        <section>
+            <div class="container max-w-[1170px] mx-auto">
+                <div class="text-center mt-16 space-y-5 lg:px-0 px-5 mb-8">
+                    <h1 class="lg:text-3xl text-2xl font-extrabold text-heading-black">Clients Question</h1>
+                    <p class="lg:text-base text-sm text-discription font-medium max-w-[900px] mx-auto">A customer
+                        questionnaire is a tried-and-true method for collecting survey data to inform our customer
+                        service strategy.</p>
+                </div>
+                <hr class="border-dashed border-2">
+
+                <div class="flex lg:flex-row flex-col gap-5 my-14 border rounded-2xl p-5">
+                    <div class="lg:w-[48%] w-[100%]">
+                        <img src="images/11.png" class="w-full" alt="">
+                    </div>
+                    <div class="lg:w-[50%] w-[100%] space-y-6">
+                        <div class="collapse collapse-plus bg-base-200">
+                            <input type="radio" name="my-accordion-3" checked="checked" />
+                            <div class="collapse-title text-xl font-medium">
+                                Our Equipment
+                            </div>
+                            <div class="collapse-content">
+                                <p>This usually includes a helmet, shoulder pads/chest protector, elbow pads, mouth
+                                    guard, protective gloves, heavily padded shorts, a 'jock' athletic protector, shin
+                                    pads and a neck guard. Goaltenders wear masks and much bulkier, specialized
+                                    equipment designed to protect them from many direct hits from the puck.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus bg-base-200">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-medium">
+                                Hockey Training
+                            </div>
+                            <div class="collapse-content">
+                                <p>Unstructured hockey play on outdoor rinks, streets, parking lots is a great way to
+                                    build a passion for the game. You can also organize team meetups to work on specific
+                                    skills off of the ice. Individual Practice: Encourage players to develop an off-ice
+                                    stickhandling routine.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus bg-base-200">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-medium">
+                                Private Lessons
+                            </div>
+                            <div class="collapse-content">
+                                <p>Individual lessons consist of 1-4 players that skate for a 30-minute session each
+                                    week.
+                                    You will have to option to choose one of our Kraken approved coaches through
+                                    DaySmart.
+                                    Coaches will create a development plan for the 8-week program once a time slot is
+                                    booked.
+                                    Players must have graduated from beginner hockey to register.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus bg-base-200">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-medium">
+                                Ski Touring
+                            </div>
+                            <div class="collapse-content">
+                                <p>Whether you’re a complete beginner or a seasoned pro skier, ski lessons are an
+                                    essential part of any winter holiday. Find loads of top tips and local insights in
+                                    our Val d'Isere Ski lessons guide.Find your perfect Val d’Isere private ski lessons.
+                                    Book directly or with help from our local experts.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus bg-base-200">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-medium">
+                                Booking
+                            </div>
+                            <div class="collapse-content">
+                                <p>Discover essential information to
+                                    streamline your experience and ensure a seamless and convenient reservation process
+                                    for our services.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus bg-base-200">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-medium">
+                                Pricings
+                            </div>
+                            <div class="collapse-content">
+                                <p> We offering detailed answers to address any
+                                    inquiries regarding the costs associated with our services.Our pricing structure and
+                                    make well-informed decisions
+                                    tailored to your budget and needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-dashed border-2">
+            </div>
+        </section>
+        <section>
+            <div class="container max-w-[1170px] mx-auto">
+                <div class="text-center mt-16 space-y-5 lg:px-0 px-5 mb-8">
+                    <h1 class="lg:text-3xl text-2xl font-extrabold text-heading-black">Get In Touch</h1>
+                    <p class="lg:text-base text-sm text-discription font-medium max-w-[900px] mx-auto">For more
+                        information please call or email us anytime.</p>
+                </div>
+                <hr class="border-dashed border-2">
+                <div class="flex lg:flex-row my-14 lg:px-0 px-5 flex-col">
+                    <div class="flex flex-col w-[100%] lg:w-[40%] p-5 border rounded-2xl justify-between  gap-6">
+                        <div class="flex p-8 bg-[#bced6d1a] rounded-2xl flex-col gap-4">
+                            <div>
+                                <img src="images/Group 1171275317.png" alt="">
+                            </div>
+                            <p class="lg:text-base text-sm text-discription font-medium">Phone Number :</p>
+                            <h4 class="lg:text-2xl text-xl font-extrabold text-heading-black">(+880) 123-456-789</h4>
+                        </div>
+                        <div class="flex p-8 bg-[#fddd5f1a] rounded-2xl flex-col gap-4">
+                            <div>
+                                <img src="images/Group 1171275318.png" alt="">
+                            </div>
+                            <p class="lg:text-base text-sm text-discription font-medium">Email : </p>
+                            <h4 class="lg:text-2xl text-xl font-extrabold text-heading-black">hockeys@support.com</h4>
+                        </div>
+                        <div>
+                            <div class="flex p-8 bg-[#629cf31a] rounded-2xl flex-col gap-4">
+                                <div>
+                                    <img src="images/Group 1171275321.png" alt="">
+                                </div>
+                                <p class="lg:text-base text-sm text-discription font-medium">Location : </p>
+                                <h4 class="lg:text-2xl text-xl font-extrabold text-heading-black">152/1 Mohakhali
+                                    Wireless Gate</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-[58%] px-5 w-[100%] flex flex-col lg:mt-0 mt-5 justify-between">
+                        <div class="flex lg:flex-row flex-col gap-5">
+                            <div class="lg:w-[50%] space-y-4 w-[100%]">
+                                <label class="block text-xl text-heading-black font-bold" for="Name">Your Name</label>
+                                <input class="block w-full p-5 border-none outline-none bg-[#13131808] rounded-xl"
+                                    type="text" placeholder="Enter your full name" id="Name">
+                            </div>
+                            <div class="lg:w-[50%] space-y-4 w-[100%]">
+                                <label class="block text-xl text-heading-black font-bold" for="Email">Your Email</label>
+                                <input class="block w-full p-5 border-none outline-none bg-[#13131808] rounded-xl"
+                                    type="email" placeholder="Enter your email" id="Email">
+                            </div>
+                        </div>
+                        <div class="flex lg:flex-row flex-col gap-5">
+                            <div class="lg:w-[50%] space-y-4 w-[100%]">
+                                <label class="block text-xl text-heading-black font-bold" for="Subject">Subject</label>
+                                <input class="block w-full p-5 border-none outline-none bg-[#13131808] rounded-xl"
+                                    type="text" placeholder="Enter your subject" id="Subject">
+                            </div>
+                            <div class="lg:w-[50%] space-y-4 w-[100%]">
+                                <label class="block text-xl text-heading-black font-bold" for="Number">Phone
+                                    Number</label>
+                                <input class="block w-full p-5 border-none outline-none bg-[#13131808] rounded-xl"
+                                    type="email" placeholder="Enter your phone number" id="Number">
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <label class="block text-xl text-heading-black font-bold" for="Message">Message</label>
+                            <textarea class="block w-full p-5 border-none outline-none bg-[#13131808] rounded-xl"
+                                name="" id="Message" cols="30" rows="10" placeholder="Write your message"></textarea>
+                        </div>
+
+                        <div class="mt-8">
+                            <a class="btn bg-color-Orenge w-full text-white lg:text-xl text-lg border-none font-bold">Send
+                                Message</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div class="container max-w-[1170px] my-14 bg-[#13131808] shadow-xl rounded-xl mx-auto">
+                <div class="py-10 space-y-5">
+                    <h4 class="text-3xl text-heading-black font-extrabold text-center">Social Media</h4>
+                    <div class="text-3xl flex gap-7 justify-center">
+                        <i class="ri-facebook-fill"></i>
+                        <i class="ri-github-fill"></i>
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-linkedin-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-heading-black">
+        <div class="container max-w-[1170px] mx-auto">
+            <div
+                class="text-white py-24 lg:space-y-0 space-y-10 px-5 list-none flex lg:flex-row flex-col justify-between">
+                <div class="space-y-5 lg:text-left text-center">
+                    <h3 class="text-3xl font-extrabold">Get In Touch</h3>
+                    <p class="lg:text-base text-sm font-medium max-w-[350px]">For more information please call or email
+                        us anytime.You can Also visit our place</p>
+                    <div class="flex items-center lg:justify-start justify-center gap-4">
+                        <img src="images/footer-message.png" alt="">
+                        <p>hockeys@support.com</p>
+                    </div>
+                    <div class="flex items-center lg:justify-start justify-center gap-4">
+                        <img src="images/footer-call.png" alt="">
+                        <p>(+880) 123-456-789</p>
+                    </div>
+                </div>
+                <div class="flex lg:gap-40 justify-around lg:text-left text-center">
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-bold mb-8">Company</h3>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Leadership</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">News & Article</a></li>
+                        <li><a href="">Legal Notice</a></li>
+                    </div>
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-bold mb-8">Support</h3>
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Ticket Support</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </div>
+                </div>
+                <div class="space-y-4 lg:pb-0 pb-10 lg:text-left text-center">
+                    <h3 class="text-xl font-bold mb-8">Services</h3>
+                    <li><a href="">Academy</a></li>
+                    <li><a href="">Group Lesson</a></li>
+                    <li><a href="">Private Lesson</a></li>
+                    <li><a href="">Hockeys for kids</a></li>
+                    <li><a href="">Hockeys for Adult</a></li>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
